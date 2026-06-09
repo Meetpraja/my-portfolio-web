@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Mit Prajapati — Flutter Developer specializing in mobile & web applications with clean architecture, Firebase, REST APIs, and native platform integrations.">
+  <meta name="keywords"
+    content="Flutter Developer, Dart, Mobile App Developer, Flutter Web, Firebase, Clean Architecture, MIT Prajapati">
+  <meta name="author" content="Mit Prajapati">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mit Prajapati — Flutter Developer">
+  <meta property="og:description"
+    content="Building clean, scalable, and beautiful mobile & web applications with Flutter.">
+  <meta property="og:type" content="website">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Mit Prajapati">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Page title -->
+  <title>Mit Prajapati — Flutter Developer</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Prevent white flash on load */
+    html,
+    body {
+      background-color: #050505;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0B0B0B;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2A2A2A;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3A3A3A;
+    }
+
+    /* Text selection */
+    ::selection {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+  </style>
+  <!-- Vanta.js Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+</head>
+
+<body>
+  <!-- Vanta.js Background Container -->
+  <div id="vanta-bg"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background-color: #050505;">
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.WAVES({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x0,
+        shininess: 30,
+        waveHeight: 15,
+        waveSpeed: 1.5,
+        zoom: 1
+      });
+    });
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
